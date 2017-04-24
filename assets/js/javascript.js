@@ -1,11 +1,7 @@
-document.getElementsById('FarenheitACelisius').onclick=convertirCelsius();
+var texto = document.getElementById("gradosFarenheit");
 
-function convertirCelsius() {
-	var far = parseFloat(document.getElementById('far').value);
-   
-	var cel= ((far - 32)*.5556);
-  
-	document.getElementById('cel').value = cel; 
-
+function convertirCelsius(gradosFarenheit) {
+  gradosFarenheit = parseFloat(gradosFarenheit);
+  document.getElementById("gradosCelsius").innerHTML=(valorFarenheit-32)/1.8;
 };
 
