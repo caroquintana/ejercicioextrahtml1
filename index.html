@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+		background-color: #CA0605;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		color: #FFFFFF;
+		line-height: 23px;
+		margin-top: 40px;
+		}	
+	</style>	
 	<title>De Fareheit a Celsius</title>
 </head>
 <body>
@@ -10,7 +21,7 @@
 	<input name="farenheit" id="farenheit" type="number" /><br>
 
 	<label for="celsius">Grados Celsius</label><br>
-	<input type="number" id="gradosCelsius"><br>
+	<input type="number" id="gradosCelsius" readonly="readonly"><br>
 
 	<button type="button" onclick="convertirCelsius(); return false">CONVERTIR A CELSIUS</button>
 
